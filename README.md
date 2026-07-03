@@ -5,7 +5,7 @@ A clean, interactive, responsive web-based Tic-Tac-Toe game built with vanilla H
 
 ## Live Demo
 You can check out the live site or share your local deployment via ngrok:
-* **Live Demo Link:** `https://your-github-username.github.io/tic-tac-toe-web-project/`
+* **Live Demo Link:** `https://tic-tac-toe-web-projects.vercel.app/`
 ---
 
 ## Features
