@@ -1,0 +1,113 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial;
+  background-color: rgba(184, 115, 30, 0.441);
+}
+.title-box{
+  font-size: clamp(1.5rem, 10vw, 3.8rem);
+  color: rgb(243, 149, 7);
+  
+}
+.container{
+  width: clamp(15rem, 80vw, 24rem);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 5px solid rgb(138, 77, 12);
+}
+.box1{
+  background-image: url(board-pic.avif);
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  border: 3px solid rgb(235, 226, 226);
+  text-align: center;
+  font-size: clamp(2rem, 10vw, 5rem);
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result-box, .mode-box{
+  margin-top: 5px;
+  font-size: clamp(0.4rem, 2vw, 1.5rem);
+  padding: 10px;
+  color: aliceblue;
+}
+.restart-game-button{
+  background-color: rgb(5, 147, 241);
+  max-width: 150px;
+  max-height: 50px;
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 500px;
+  cursor: pointer;
+  color: rgb(244, 247, 250);
+  border: none;
+  
+}
+.restart-game-button:hover{
+  background-color: rgb(243, 127, 127);
+  color: aliceblue;
+}
+.player-computer-box{
+  max-width: 300px;
+  max-height: 50px;
+  width: 5000px;
+  height: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.two-player-button, .play-with-computer-button{
+  background-color: rgb(221, 234, 76);
+  max-width: 200px;
+  max-height: 50px;
+  width: 100px;
+  height: 40px;
+  border-radius: 500px;
+  cursor: pointer;
+  color: rgb(15, 16, 17);
+  margin-bottom: 5px;
+  color: rgb(20, 5, 5);
+  border: none;
+}
+.two-player-button:hover, .play-with-computer-button:hover{
+  background-color: greenyellow;
+  color: rgb(2, 19, 33);
+}
+.note-box{
+  text-align: start;
+  padding-left: 10%;
+  color: rgb(247, 245, 242);
+  font-size: clamp(0.3rem, 2vw, 1rem);
+}
+
+@media (max-width: 600px) {
+  .container{
+    width: 90%;
+    margin: 10px;
+  }
+  .box1{
+    font-size: 5rem;
+  }
+  .result-box, .mode-box{
+    font-size: 20px;
+  }
+  .player-computer-box{
+    width: 100%;
+    height: 30px;
+    border-radius: 0px;
+  }
+  .two-player-button, .play-with-computer-button, .restart-game-button{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+}
